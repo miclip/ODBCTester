@@ -6,4 +6,4 @@ applications:
    health-check-type: process
    command: ODBCTester.exe
    env:
-     SHADOWDIRECT: DRIVER=DataDirect Shadow Client 7.3;HOST=127.0.0.1;PORT=8231;DB=databaseName;UID=userid;PWD=pwd
+     DRIVERODBCCONN: DRIVER=DataDirect Shadow Client 7.3;HOST=127.0.0.1;PORT=8231;DB=databaseName;UID=userid;PWD=pwd
