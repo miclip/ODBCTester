@@ -15,11 +15,11 @@ namespace ODBCTester
                 try
                 {
                     Console.WriteLine("Attemping to connect to data source...");
-                    var connectionString = ConfigurationManager.ConnectionStrings["shadowDirect"].ConnectionString;
+                    var connectionString = ConfigurationManager.ConnectionStrings["odbcDriverConn"].ConnectionString;
 
-                    if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("SHADOWDIRECT")))
+                    if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DRIVERODBCCONN")))
                     {
-                        connectionString = Environment.GetEnvironmentVariable("SHADOWDIRECT");
+                        connectionString = Environment.GetEnvironmentVariable("DRIVERODBCCONN");
                     }
 
                     var connection = new OdbcConnection(connectionString);
