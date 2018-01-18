@@ -14,7 +14,7 @@ namespace ODBCTester
             {
                 try
                 {
-                    Console.WriteLine("Attemping to connect to data source...");
+                    Console.WriteLine("Attempting to connect to data source...");
                     var connectionString = ConfigurationManager.ConnectionStrings["odbcDriverConn"].ConnectionString;
 
                     if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DRIVERODBCCONN")))
